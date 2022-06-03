@@ -171,7 +171,7 @@ footer{
     width: 2rem;
 }
 
-button{
+.button-footer{
   display: flex;
   background-color: white;
   height: 6rem;
@@ -180,5 +180,10 @@ button{
   margin-left: 25%;
   border: 1px;
   border-radius: 1rem;
+  color: white;
+}
+
+.section3 a {
+  text-decoration: none;
   color: white;
 }
