@@ -41,7 +41,7 @@
   font-weight:lighter;
   display: flex;
   padding: 2rem;
-  margin-left: 36rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
@@ -171,7 +171,7 @@ footer{
     width: 2rem;
 }
 
-button{
+.button-footer{
   display: flex;
   background-color: white;
   height: 6rem;
