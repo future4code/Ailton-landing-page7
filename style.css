@@ -1,9 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .containerAll {
@@ -19,6 +18,7 @@
   display: flex;
   width: 100%;
   color: white;
+  
 }
 
 .logo-header {
@@ -38,9 +38,14 @@
   font-weight: lighter;
   display: flex;
   padding: 2rem;
-  margin-left: 36rem;
+  margin-left: 53rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+}
+
+.paginas a {
+  text-decoration: none;
+  color: white;
 }
 
 /* main */
@@ -48,40 +53,6 @@
   display: flex;
   flex-direction: column;
 }
-
-/* header */
-
-.fundo-header {
-  background-color: #ff9050;
-  display: flex;
-  height: 4rem;
-  width: 100%;
-  color: white;
-}
-
-.logo-header {
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
-
-.logo-header img {
-  display: flex;
-  height: 4rem;
-  width: 4rem;
-}
-
-.paginas {
-  font-size: small;
-  font-weight:lighter;
-  display: flex;
-  padding: 2rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-/* main */
 
 .mainLanding {
   display: grid;
@@ -104,7 +75,7 @@
 }
 
 .dadosCliente {
-  margin-left: 25rem;
+  margin-left: 22rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -112,8 +83,8 @@
   color: white;
   background-color: #ff9050;
   border-radius: 1rem;
-  width: 20rem;
-  height: 15rem;
+  width: 45%;
+  height: 110%;
   gap: 1rem;
   padding-right: 1rem;
 }
@@ -123,29 +94,32 @@ h2 {
   padding-top: 1rem;
 }
 .cpf {
-  width: 18rem;
+  width: 90%;
   text-align: center;
   padding: 1vh;
   border-radius: 1vh;
+  outline: none;
+  border: none;
 }
 
 .email {
-  width: 18rem;
+  width: 90%;
   text-align: center;
   padding: 1vh;
   border-radius: 1vh;
+  outline: none;
+  border: none;
 }
 .enviar {
-  width: 6rem;
+  width: 50%;
   text-align: center;
   padding: 1vh;
   border-radius: 1vh;
+  border: none;
 }
 
-<<<<<<< HEAD
 .enviar:hover {
-  background-color: #ff9050;
-  color: white;
+  opacity: 0.7;
 }
 
 .enviar:active {
@@ -156,6 +130,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .box {
   display: flex;
@@ -167,10 +144,8 @@ h2 {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-left: 5rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   text-align: center;
+  transition: all 500ms linear;
 }
 .box:hover {
   background-color: coral;
@@ -259,6 +234,11 @@ footer {
   padding-left: 20rem;
 }
 
+.section3 a {
+    text-decoration: none;
+    color: white;
+}
+
 .section4 {
   display: flex;
   flex-direction: column;
@@ -284,83 +264,114 @@ footer {
   border: 1px;
   border-radius: 1rem;
   color: white;
-=======
-.enviar:hover{
-    background-color: #ff9050;
-    color: white;
+
 }
 
-.enviar:active{
-    background-color: white;
-    color: #ff9050;
->>>>>>> master
-}
-
-/* footer  */
-footer{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.fundo-manutencao{
-    background-color: #ff9050;
-    display: flex;
-    height: 8rem;
-    width: 100%;
-    color: white;
-}
-
-.section1{
-    display: flex;
+@media screen and (max-device-width: 800px) {
+  .main-container {
+    display: none;
+  }
+  .containerAll {
     align-items: center;
-    margin-left: 1rem;
-}
-
-.section1 img{
-  display: flex;
-  height: 8rem;
-  width: 8rem;
-}
-
-.section2{
-  padding-left: 10rem;
-  margin-top: 2rem;
-}
-
-
-.section3{
-  margin-top: 2rem;
-  padding-left: 20rem;
-}
-
-.section4{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: 7%;
-}
-
-.section4 img{
+    justify-content: center;
+  }
+  .fundo-header {
+    height: 10rem;
+    width: 100%;
+  }
+  .paginas {
+    margin-left: 3rem;
+    font-size: smaller;
+    padding: 0;
+  }
+  .mainBank {
     display: flex;
-    height: 2rem;
-    width: 2rem;
-}
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+  }
+  .mainLanding {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-size: 150%;
+    background-position: top;
+    width: 100%;
+    height: 130%;
+    gap: 5rem;
+    justify-items: center;
+  }
 
-.button-footer{
-  display: flex;
-  background-color: white;
-  height: 6rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 25%;
-  border: 1px;
-  border-radius: 1rem;
-  color: white;
-}
+  .slogan {
+    font-size: smaller;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+  .dadosCliente {
+    margin-left: 3em;
+    width: 80%;
+  }
+  .pecaCartao {
+    font-size: small;
+  }
 
-.section3 a {
-  text-decoration: none;
-  color: white;
+  .box {
+    width: 15rem;
+    height: 5rem;
+    font-size: x-small;
+  }
+  .boxInfo {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .beneficios {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .campanhafinal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-size: 150%;
+    background-position: top;
+    width: 100%;
+    height: 20rem;
+  }
+  .slogan2 {
+    font-size: small;
+
+    padding-left: 10rem;
+  }
+  .logoBank {
+    width: 40%;
+    margin-left: 15rem;
+  }
+  .section2 {
+    padding: 0;
+  }
+  .section3 {
+    padding-left: 2rem;
+  }
+  .section4 {
+    margin: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .section4 img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+  }
+  .footer {
+    margin-left: 1rem;
+  }
+  h3 {
+    font-size: smaller;
+  }
+  .enviar {
+    margin-bottom: 1rem;
+  }
+
 }

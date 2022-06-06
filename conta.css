@@ -72,34 +72,22 @@ body {
       color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-content: flex-start;
       margin-left: 1rem;
+      margin: 4rem;
     }
-    .historia {
+
+    .conta {
       font-size: x-large;
       margin: 1rem;
     }
   
-    .texto-historia {
+    .texto-conta {
       padding: 4rem;
       font-size: larger;
     }
   
-    .imagem-bancos {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-self: center;
-      margin: 1rem;
-    }
-  
-    .imagem-bancos img {
-      width: 16vw;
-      height: 20vh;
-      margin: 1rem;
-      border: 2px solid #ff9050;
-    }
   
     /* footer  */
   
@@ -171,3 +159,6 @@ body {
       
       }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+}
